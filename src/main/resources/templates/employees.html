@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management</title>
+    <style>
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th a {
+            text-decoration: none;
+        }
+        .pagination {
+            margin: 20px;
+            text-align: center;
+        }
+        .pagination a {
+            margin: 5px;
+            padding: 8px 12px;
+            border: 1px solid #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<h2 style="text-align:center;">Employee Management with Pagination & Sorting</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>
+            <a th:href="@{/page/1(sortField='id', sortDir=${reverseSortDir})}">ID</a>
+        </th>
+        <th>
+            <a th:href="@{/page/1(sortField='name', sortDir=${reverseSortDir})}">Name</a>
+        </th>
+        <th>
+            <a th:href="@{/page/1(sortField='department', sortDir=${reverseSortDir})}">Department</a>
+        </th>
+        <th>
+            <a th:href="@{/page/1(sortField='salary', sortDir=${reverseSortDir})}">Salary</a>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="emp : ${listEmployees}">
+        <td th:text="${emp.id}"></td>
+        <td th:text="${emp.name}"></td>
+        <td th:text="${emp.department}"></td>
+        <td th:text="${emp.salary}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="pagination">
+    <!-- Prev button -->
+    <a th:if="${currentPage > 1}"
+       th:href="@{/page/{pageNo}(pageNo=${currentPage - 1}, sortField=${sortField}, sortDir=${sortDir})}">
+        ⬅ Prev
+    </a>
+
+    <!-- Next button -->
+    <a th:if="${currentPage < totalPages}"
+       th:href="@{/page/{pageNo}(pageNo=${currentPage + 1}, sortField=${sortField}, sortDir=${sortDir})}">
+        Next ➡
+    </a>
+
+    <span th:each="i : ${#numbers.sequence(1, totalPages)}">
+    <a th:href="@{/page/{pageNo}(pageNo=${i}, sortField=${sortField}, sortDir=${sortDir})}"
+       th:text="${i}"></a>
+    </span>
+</div>
+</body>
+</html>
