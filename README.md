@@ -24,26 +24,29 @@ This project demonstrates CRUD operations, pagination, and server-side sorting i
 - **Build Tool:** Maven  
 - **Language:** Java (JDK 17 or later)  
 
+
+
 <p align="center">
   <a href="https://www.java.com/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" width="60" height="60"/>
   </a>
   <a href="https://spring.io/projects/spring-boot" target="_blank">
-    <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring boot" width="60" height="60"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="spring boot" width="60" height="60"/>
   </a>
   <a href="https://spring.io/projects/spring-data-jpa" target="_blank">
-    <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring data jpa" width="60" height="60"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="spring data jpa" width="60" height="60"/>
   </a>
   <a href="https://www.thymeleaf.org/" target="_blank">
-    <img src="https://www.vectorlogo.zone/logos/thymeleaf/thymeleaf-icon.svg" alt="thymeleaf" width="60" height="60"/>
+    <img src="https://github.com/simple-icons/simple-icons/blob/develop/icons/thymeleaf.svg" alt="thymeleaf" width="60" height="60"/>
   </a>
   <a href="https://www.mysql.com/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="60" height="60"/>
   </a>
   <a href="https://maven.apache.org/" target="_blank">
-    <img src="https://maven.apache.org/images/maven-logo-black-on-white.png" alt="maven" width="90" height="60"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="maven" width="60" height="60"/>
   </a>
 </p>
+
 ---
 
 ## 📂 Project Structure
